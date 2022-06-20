@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Movies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(238, 238, 238);
+        }
+
+        .cmmtxt {
+            font-weight: 500;
+            font-size: medium;
+        }
+
+        #navbr {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .imgcenter {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .avatar {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav id="navbr" class="navbar navbar-expand-lg navbar-light"><img style="padding-left: 10px;"
+                src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/logo.png" alt="logo" width="50px">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">V Movies</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                    aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Em destaque</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Avaliações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Novidades</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="CarouselandInfo">
+        <div class="container-fluid">
+            <div class="row text-center p-5">
+                <h2>Lançamentos</h2>
+            </div>
+            <div class="row pb-5">
+                <div class="col">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img id="bannermv"
+                                    src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat.jpg"
+                                    class="d-block w-100" alt="batbig">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="bannermv"
+                                    src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat.jpg"
+                                    class="d-block w-100" alt="batbig">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="bannermv"
+                                    src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat.jpg"
+                                    class="d-block w-100" alt="batbig">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <h3>Nome do Filme</h3>
+                            <p class="cmmtxt"><b>Sinopse:</b> Lorem ipsum lobortis ornare a platea fermentum neque
+                                sollicitudin scelerisque senectus, urna integer et aliquam blandit pellentesque platea
+                                feugiat tellus integer nunc, primis aliquet posuere donec nam at iaculis donec class.
+                                tincidunt justo mollis est leo sollicitudin, donec gravida accumsan quam aliquam quam,
+                                adipiscing tincidunt aliquam est. proin nibh erat metus iaculis convallis nibh fermentum
+                                magna lorem, enim fames cras ultricies cubilia malesuada eget vivamus adipiscing metus,
+                                torquent sapien cursus curabitur amet sit quisque dolor.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="cmmtxt"><b>Diretor:</b> Lorem, ipsum</p>
+                            </div>
+                            <div class="col">
+                                <p class="cmmtxt"><b>Roteiro:</b> Lorem, ipsum</p>
+                            </div>
+                            <div class="col">
+                                <p class="cmmtxt"><b>Estreia:</b> 2022</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <b>Elenco:</b>
+                        </div>
+                        <div class="row pt-2">
+                            <p>Ator 1 | Ator 2 | Ator 3</p>
+                        </div>
+                        <div class="row">
+                            <b>Avaliação:</b>
+                        </div>
+                        <div>
+                            <p>★★★★</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="row pt-5">
+                <div class="col">
+                    <h2 class="d-block ms-5">Em destaque</h2>
+                </div>
+                <div class="col">
+                    <div class="dropdown text-end">
+                        <button class="btn btn-secondary dropdown-toggle me-5" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categoria: Todos
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Aventura</a></li>
+                            <li><a class="dropdown-item" href="#">Romance</a></li>
+                            <li><a class="dropdown-item" href="#">Comedia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <img class="imgcenter" width="250vw"
+                        src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat_post.jpg" alt="batsmall">
+                </div>
+                <div class="col">
+                    <img class="imgcenter" width="250vw"
+                        src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat_post.jpg" alt="batsmall">
+                </div>
+                <div class="col">
+                    <img class="imgcenter" width="250vw"
+                        src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat_post.jpg" alt="batsmall">
+                </div>
+                <div class="col">
+                    <img class="imgcenter" width="250vw"
+                        src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat_post.jpg" alt="batsmall">
+                    <button type="button" class="btn btn-dark float-end mt-4 me-5">Carregar mais +</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light p-5">
+            <div class="row pt-5">
+                <div class="col">
+                    <h2 class="d-block ms-5">Últimas Avaliações</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <div style="max-width: 70px;" class="col p-0 me-3">
+                                <img class="avatar"
+                                    src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/av1.jpg" alt="muie">
+                            </div>
+                            <div class="col">
+                                <h3>NomePessoa</h3>
+                                <p><b>Avaliação:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Molestias tempora explicabo quisquam, dolore repudiandae, fugiat voluptatum quos
+                                </p>
+                                <p>★★★★ 19/06/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <div style="max-width: 70px;" class="col p-0 me-3">
+                                <img class="avatar"
+                                    src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/av1.jpg" alt="muie">
+                            </div>
+                            <div class="col">
+                                <h3>NomePessoa</h3>
+                                <p><b>Avaliação:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Molestias tempora explicabo quisquam, dolore repudiandae, fugiat voluptatum quos
+                                </p>
+                                <p>★★★★ 19/06/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <div style="max-width: 70px;" class="col p-0 me-3">
+                                <img class="avatar"
+                                    src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/av1.jpg" alt="muie">
+                            </div>
+                            <div class="col">
+                                <h3>NomePessoa</h3>
+                                <p><b>Avaliação:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Molestias tempora explicabo quisquam, dolore repudiandae, fugiat voluptatum quos
+                                </p>
+                                <p>★★★★ 19/06/2022</p>
+                                <button type="button" class="btn btn-dark float-end mt-4 me-5">Carregar mais +</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col">
+                    <h2 class="d-block ms-5">Entrevistas & Making of</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <iframe height="250px" type="text/html"
+                                src="https://www.youtube.com/embed/jtvdRauMfa8"></iframe>
+                            <div class="col pt-3">
+                                <h3><b>Filme:</b> NomeFilme</h3>
+                                <p><b>Diretor:</b> Lorem, ipsum</p>
+                                <p><b>Roteiro:</b> Lorem |<b> Estreia:</b> 19/06/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <iframe height="250px" type="text/html"
+                                src="https://www.youtube.com/embed/jtvdRauMfa8"></iframe>
+                            <div class="col pt-3">
+                                <h3><b>Filme:</b> NomeFilme</h3>
+                                <p><b>Diretor:</b> Lorem, ipsum</p>
+                                <p><b>Roteiro:</b> Lorem |<b> Estreia:</b> 19/06/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <iframe height="250px" type="text/html"
+                                src="https://www.youtube.com/embed/jtvdRauMfa8"></iframe>
+                            <div class="col pt-3">
+                                <h3><b>Filme:</b> NomeFilme</h3>
+                                <p><b>Diretor:</b> Lorem, ipsum</p>
+                                <p><b>Roteiro:</b> Lorem |<b> Estreia:</b> 19/06/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-5">
+            <div class="row px-5">
+                <div class="col-8 ps-5">
+                    <h2>Novidades</h2>
+                    <div class="container p-0">
+                        <div class="row">
+                            <div style="max-width: 250px;" class="col p-0">
+                                <img width="250px"
+                                    src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat.jpg" alt="batex">
+                            </div>
+                            <div class="col">
+                                <h3>Título da materia</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquam eligendi non!
+                                    Qui fuga autem quas at aliquam, consectetur nobis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-top: 20px !important;" class="container p-0">
+                        <div class="row">
+                            <div style="max-width: 250px;" class="col p-0">
+                                <img width="250px"
+                                    src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat.jpg" alt="batex">
+                            </div>
+                            <div class="col">
+                                <h3>Título da materia</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquam eligendi non!
+                                    Qui fuga autem quas at aliquam, consectetur nobis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-top: 20px !important;" class="container p-0">
+                        <div class="row">
+                            <div style="max-width: 250px;" class="col p-0">
+                                <img width="250px"
+                                    src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat.jpg" alt="batex">
+                            </div>
+                            <div class="col">
+                                <h3>Título da materia</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia aliquam eligendi non!
+                                    Qui fuga autem quas at aliquam, consectetur nobis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Sobre</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vero consequatur eum
+                        architecto sapiente unde, ex, in vitae suscipit praesentium laudantium voluptatum tenetur saepe
+                        mollitia natus voluptatibus! Corporis, reprehenderit soluta? Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Minima rem, beatae quisquam ad ex enim odio qui commodi quod
+                        repellat quas, voluptates quam. Modi nulla repudiandae veritatis aliquam commodi omnis.</p>
+                    <h2>Editorial</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                        <path
+                            d="M24 8c-4.42 0-8 3.58-8 8 0 4.41 3.58 8 8 8s8-3.59 8-8c0-4.42-3.58-8-8-8zm0 20c-5.33 0-16 2.67-16 8v4h32v-4c0-5.33-10.67-8-16-8z" />
+                        <path fill="none" d="M0 0h48v48h-48z" />
+                    </svg>
+                    <span><b>Redação: </b>Nome do cara</span>
+                    <p></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                        <path
+                            d="M24 8c-4.42 0-8 3.58-8 8 0 4.41 3.58 8 8 8s8-3.59 8-8c0-4.42-3.58-8-8-8zm0 20c-5.33 0-16 2.67-16 8v4h32v-4c0-5.33-10.67-8-16-8z" />
+                        <path fill="none" d="M0 0h48v48h-48z" />
+                    </svg>
+                    <span><b>Pesquisa: </b>Nome do cara</span>
+                    <p></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                        <path
+                            d="M24 8c-4.42 0-8 3.58-8 8 0 4.41 3.58 8 8 8s8-3.59 8-8c0-4.42-3.58-8-8-8zm0 20c-5.33 0-16 2.67-16 8v4h32v-4c0-5.33-10.67-8-16-8z" />
+                        <path fill="none" d="M0 0h48v48h-48z" />
+                    </svg>
+                    <span><b>Gerente: </b>Nome do cara</span>
+                    <h2>Redes</h2>
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="48px"
+                        height="48px">
+                        <path
+                            d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z" />
+                    </svg>
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="48px"
+                        height="48px">
+                        <path
+                            d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z" />
+                    </svg>
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="48px"
+                        height="48px">
+                        <path
+                            d="M 4.773438 1 C 2.695313 1 1 2.695313 1 4.773438 L 1 10.230469 C 1 12.304688 2.695313 14 4.773438 14 L 10.230469 14 C 12.304688 14 14 12.304688 14 10.226563 L 14 4.773438 C 14 2.695313 12.304688 1 10.226563 1 Z M 4.773438 2 L 10.226563 2 C 11.765625 2 13 3.234375 13 4.773438 L 13 10.226563 C 13 11.765625 11.765625 13 10.230469 13 L 4.773438 13 C 3.234375 13 2 11.765625 2 10.230469 L 2 4.773438 C 2 3.234375 3.234375 2 4.773438 2 Z M 11.5 3 C 11.222656 3 11 3.222656 11 3.5 C 11 3.777344 11.222656 4 11.5 4 C 11.777344 4 12 3.777344 12 3.5 C 12 3.222656 11.777344 3 11.5 3 Z M 7.5 4 C 5.574219 4 4 5.574219 4 7.5 C 4 9.425781 5.574219 11 7.5 11 C 9.425781 11 11 9.425781 11 7.5 C 11 5.574219 9.425781 4 7.5 4 Z M 7.5 5 C 8.886719 5 10 6.113281 10 7.5 C 10 8.886719 8.886719 10 7.5 10 C 6.113281 10 5 8.886719 5 7.5 C 5 6.113281 6.113281 5 7.5 5 Z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center py-5" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a style="font-size: 1.3rem;" class="text-dark text-decoration-none"
+                href="https://github.com/henrish0/">2022 Copyright: henrish0 - Henrique
+                Almeida</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
