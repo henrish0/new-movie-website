@@ -33,6 +33,21 @@
             width: 70px;
             border-radius: 50%;
         }
+
+        #imgincard {
+            width: 200px !important;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        #mycards {
+            margin: 1.3rem;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
     </style>
 </head>
 
@@ -61,9 +76,9 @@
                             <a class="nav-link active" href="#">Novidades</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                        <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+                    <form class="d-flex header-form-search">
+                        <input id="search-bar" class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button id="headerSearchBtn" class="btn btn-outline-primary" type="submit">Pesquisar</button>
                     </form>
                 </div>
             </div>
@@ -117,21 +132,18 @@
                 <div class="col">
                     <div class="container">
                         <div class="row">
-                            <h3>Nome do Filme</h3>
-                            <p class="cmmtxt"><b>Sinopse:</b> Lorem ipsum lobortis ornare a platea fermentum neque
-                                sollicitudin scelerisque senectus, urna integer et aliquam blandit pellentesque platea
-                                feugiat tellus integer nunc, primis aliquet posuere donec nam at iaculis donec class.
-                                tincidunt justo mollis est leo sollicitudin, donec gravida accumsan quam aliquam quam,
-                                adipiscing tincidunt aliquam est. proin nibh erat metus iaculis convallis nibh fermentum
-                                magna lorem, enim fames cras ultricies cubilia malesuada eget vivamus adipiscing metus,
-                                torquent sapien cursus curabitur amet sit quisque dolor.</p>
+                            <h3>The Batman (2022)</h3>
+                            <p class="cmmtxt"><b>Sinopse:</b> Após dois anos espreitando as ruas como Batman, Bruce
+                                Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados
+                                confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a
+                                população.</p>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <p class="cmmtxt"><b>Diretor:</b> Lorem, ipsum</p>
+                                <p class="cmmtxt"><b>Diretor:</b> Matt Reeves</p>
                             </div>
                             <div class="col">
-                                <p class="cmmtxt"><b>Roteiro:</b> Lorem, ipsum</p>
+                                <p class="cmmtxt"><b>Roteiro:</b> Peter Craig</p>
                             </div>
                             <div class="col">
                                 <p class="cmmtxt"><b>Estreia:</b> 2022</p>
@@ -141,7 +153,7 @@
                             <b>Elenco:</b>
                         </div>
                         <div class="row pt-2">
-                            <p>Ator 1 | Ator 2 | Ator 3</p>
+                            <p>Robert Pattinson | Zoë Kravitz | Jeffrey Wright</p>
                         </div>
                         <div class="row">
                             <b>Avaliação:</b>
@@ -172,23 +184,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row justify-content-center mt-5" id="divListaFilmes">
                 <div class="col">
                     <img class="imgcenter" width="250vw"
                         src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat_post.jpg" alt="batsmall">
-                </div>
-                <div class="col">
-                    <img class="imgcenter" width="250vw"
-                        src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat_post.jpg" alt="batsmall">
-                </div>
-                <div class="col">
-                    <img class="imgcenter" width="250vw"
-                        src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat_post.jpg" alt="batsmall">
-                </div>
-                <div class="col">
-                    <img class="imgcenter" width="250vw"
-                        src="https://raw.githubusercontent.com/henrish0/mov/main/jpegs/bat_post.jpg" alt="batsmall">
-                    <button type="button" class="btn btn-dark float-end mt-4 me-5">Carregar mais +</button>
+                    <a href="detalhes.html?id=550" class="btn btn-dark">Veja mais...</a>
                 </div>
             </div>
         </div>
@@ -400,6 +400,8 @@
                 Almeida</a>
         </div>
     </footer>
+    <script src="app.js" defer></script>
+    <script src="pesquisa.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
