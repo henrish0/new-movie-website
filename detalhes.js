@@ -1,4 +1,3 @@
-
 const params = new URLSearchParams(location.search);
 let id = params.get('id');
 
@@ -13,13 +12,8 @@ if (idxFilme > -1) {
             <div class="row">
                 <h1 style="font-size: 3rem;" class="text-center pt-5 pb-3">${filme.title}</h1>
                 <p style="font-size: 1.2rem;" class="cmmtxt text-center">${filme.overview}</p>
-            </div>
-         </div>    
-    
-         `
+            </div> `
 }
 else {
     alert('Filme não encontrado')
 }
-
-

@@ -1,0 +1,2 @@
+O site mostra os filmes principais através da api,
+você também pode expandir um filme para ler informações adicionais sobre ele.

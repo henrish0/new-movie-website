@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.cmmtxt {
+    font-weight: 500;
+    font-size: medium;
+}
+
+#navbr {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.avatar {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+#imgincard {
+    width: 200px !important;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#mycards {
+    margin: 1.3rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
